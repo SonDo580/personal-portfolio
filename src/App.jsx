@@ -1,9 +1,6 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
+import About from "@/sections/About";
+import Projects from "@/sections/Projects";
+import Contact from "@/sections/Contact";
 
 function App() {
   return (
