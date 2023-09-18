@@ -37,14 +37,7 @@ const reactjsProjects = [
     image: IMAGES.crownClothing,
     title: "Crown Clothing",
     desc: "An online clothing store (guided project). I implemented most of the things myself.",
-    stack: [
-      "React",
-      "React Router",
-      "Redux",
-      "Redux Saga",
-      "Firebase",
-      "styled-components",
-    ],
+    stack: ["React", "React Router", "Redux", "Redux Saga", "Firebase"],
     code: "https://github.com/SonDo580/crown-clothing",
     live: "https://sondo-crown-clothing.netlify.app",
   },
@@ -215,4 +208,23 @@ const nodejsProject = [
   },
 ];
 
-export { reactjsProjects, javascriptProjects, htmlProjects, nodejsProject };
+const PROJECTS = [
+  {
+    heading: "ReactJS",
+    items: reactjsProjects,
+  },
+  {
+    heading: "JavaScript",
+    items: javascriptProjects,
+  },
+  {
+    heading: "HTML, CSS",
+    items: htmlProjects,
+  },
+  {
+    heading: "NodeJS",
+    items: nodejsProject,
+  },
+];
+
+export { PROJECTS };
