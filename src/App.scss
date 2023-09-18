@@ -5,6 +5,45 @@ section {
   }
 }
 
+.about {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  background-color: darkcyan;
+
+  h1 {
+    strong {
+      color: darkgoldenrod;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .text {
+    background-color: #e6f4f1;
+    padding: 30px 50px;
+    border-radius: 20px;
+    color: #456b6d;
+
+    p {
+      font-size: 1.2rem;
+      padding: 0 20px;
+    }
+  }
+
+  .links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    padding: 20px 20px 0;
+  }
+}
+
 .contact {
   background-color: darkcyan;
   color: greenyellow;
@@ -139,5 +178,28 @@ section {
   }
   .slick-dots li button:before {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    padding: 30px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    gap: 30px;
+
+    .photo {
+      display: block;
+      text-align: center;
+
+      img {
+        width: 70%;
+      }
+    }
   }
 }

@@ -4,12 +4,18 @@ import MyPhoto from "./myPhoto.jpg";
 export default function About() {
   return (
     <section className="about">
+      <div className="photo">
+        <img src={MyPhoto} alt="my photo" />
+      </div>
+
       <div className="text">
-        <h1>Hi! I&#39;m Do Minh Son - a Front End Developer</h1>
+        <h1>
+          Hi! I&#39;m <strong>Do Minh Son</strong> - a Front End Developer
+        </h1>
         <p>
-          I&#39;m passionate about software development, specifically web
-          development. I want to build websites and apps that are used and loved
-          by people.
+          I&#39;m passionate about software development, especially web
+          development. I want to create websites and apps that are used and
+          loved by people.
         </p>
         <p>
           Web development is a constantly evolving field, so I&#39;m still
@@ -37,10 +43,6 @@ export default function About() {
             </a>
           </li>
         </ul>
-      </div>
-
-      <div className="photo">
-        <img src={MyPhoto} alt="my photo" />
       </div>
     </section>
   );
