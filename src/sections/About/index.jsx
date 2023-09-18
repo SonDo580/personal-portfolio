@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import MyPhoto from "./myPhoto.jpg";
+import MyCV from "./SonDo_CV.pdf";
 
 export default function About() {
   return (
@@ -40,6 +41,11 @@ export default function About() {
               rel="noreferrer"
             >
               <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href={MyCV} target="_blank" rel="noreferrer" className="resume">
+              My Resume
             </a>
           </li>
         </ul>
