@@ -1,0 +1,83 @@
+.card {
+  box-shadow: 0 0 5px 0 blue;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+  }
+
+  .stack {
+    gap: 5px;
+    flex-wrap: wrap;
+
+    span {
+      display: inline-block;
+      padding: 5px;
+      border: 1px solid gray;
+      border-radius: 15px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .links {
+    gap: 10px;
+    margin-bottom: 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .code {
+      background-color: darkgoldenrod;
+      &:hover {
+        background-color: darkorange;
+      }
+    }
+
+    .live {
+      background-color: blueviolet;
+      &:hover {
+        background-color: cornflowerblue;
+      }
+    }
+  }
+}
+
+.slider {
+  .slick-track {
+    display: flex;
+    gap: 20px;
+  }
+
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    display: none !important;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+  .slick-dots li button:before {
+    font-size: 0.8rem;
+  }
+}
