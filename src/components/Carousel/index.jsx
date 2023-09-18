@@ -4,9 +4,11 @@ import Slider from "react-slick";
 import PropTypes from "prop-types";
 
 import ProjectCard from "@/components/ProjectCard";
-import { settings } from "./config";
+import { getSettings } from "./config";
 
 export default function Carousel({ items }) {
+  const settings = getSettings(items.length);
+
   return (
     <Slider {...settings} className="slider">
       {items.map((item, index) => (

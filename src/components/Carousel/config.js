@@ -1,33 +1,36 @@
-export const settings = {
+const getSlides = (numItems, defaultSlides) =>
+  Math.min(numItems, defaultSlides);
+
+const getSettings = (numItems) => ({
   accessibility: true,
   lazyLoad: true,
   dots: true,
-  infinite: false,
+  autoplay: true,
+  autoplaySpeed: 1500,
   speed: 500,
   initialSlide: 0,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: getSlides(numItems, 4),
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: getSlides(numItems, 3),
       },
     },
     {
       breakpoint: 820,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: getSlides(numItems, 2),
       },
     },
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: getSlides(numItems, 1),
       },
     },
   ],
-};
+});
+
+export { getSettings };
