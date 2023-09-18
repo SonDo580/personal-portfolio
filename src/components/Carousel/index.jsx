@@ -8,7 +8,7 @@ import { settings } from "./config";
 
 export default function Carousel({ items }) {
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="slider">
       {items.map((item, index) => (
         <ProjectCard key={index} project={item} />
       ))}

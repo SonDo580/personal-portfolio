@@ -6,25 +6,31 @@ export default function ProjectCard({ project }) {
   return (
     <div className="card">
       <img src={image} alt={`${title} photo`} />
-      <h6>{title}</h6>
-      <p>{desc}</p>
-      <ul className="stack">
-        {stack.map((item, index) => (
-          <li key={index}>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-      <ul className="links">
-        <li>
-          <a href={code}>Source Code</a>
-        </li>
-        {live && (
+      <div className="info">
+        <h6>{title}</h6>
+        <p>{desc}</p>
+        <ul className="stack">
+          {stack.map((item, index) => (
+            <li key={index}>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <ul className="links">
           <li>
-            <a href={live}>Live Preview</a>
+            <a href={code} target="_blank" rel="noreferrer" className="code">
+              Source Code
+            </a>
           </li>
-        )}
-      </ul>
+          {live && (
+            <li>
+              <a href={live} target="_blank" rel="noreferrer" className="live">
+                Live Preview
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
     </div>
   );
 }
