@@ -44,7 +44,7 @@ export default function About() {
           </li>
           <li>
             <a
-              href="https://www.topcv.vn/xem-cv/BwNZAVRTUVsBVFYBCg4DVFAAC1BTBFoGWlMGVg8559"
+              href="https://www.topcv.vn/xem-cv/VwwHDVZQBAUFVQBRAVdVVAVXVwAKClQLBlMFWQ4b8b"
               target="_blank"
               rel="noreferrer"
               className="resume"
