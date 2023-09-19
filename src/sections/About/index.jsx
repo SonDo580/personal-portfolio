@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import MyPhoto from "./myPhoto.jpg";
-import MyCV from "./SonDo_CV.pdf";
 
 export default function About() {
   return (
@@ -36,7 +35,7 @@ export default function About() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/son-do-0b641211a/"
+              href="https://www.linkedin.com/in/son-do-minh/"
               target="_blank"
               rel="noreferrer"
             >
@@ -44,7 +43,12 @@ export default function About() {
             </a>
           </li>
           <li>
-            <a href={MyCV} target="_blank" rel="noreferrer" className="resume">
+            <a
+              href="https://www.topcv.vn/xem-cv/BwNZAVRTUVsBVFYBCg4DVFAAC1BTBFoGWlMGVg8559"
+              target="_blank"
+              rel="noreferrer"
+              className="resume"
+            >
               My Resume
             </a>
           </li>
