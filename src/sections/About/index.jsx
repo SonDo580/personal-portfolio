@@ -43,12 +43,7 @@ export default function About() {
             </a>
           </li>
           <li>
-            <a
-              href="https://www.topcv.vn/xem-cv/VwwHDVZQBAUFVQBRAVdVVAVXVwAKClQLBlMFWQ4b8b"
-              target="_blank"
-              rel="noreferrer"
-              className="resume"
-            >
+            <a href="/SonDoCV.pdf" target="_blank" className="resume">
               My Resume
             </a>
           </li>
