@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import MyPhoto from "./myPhoto.jpg";
 
 export default function About() {
@@ -43,9 +44,9 @@ export default function About() {
             </a>
           </li>
           <li>
-            <a href="/SonDoCV.pdf" target="_blank" className="resume">
+            <Link to="/resume" className="resume">
               My Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
