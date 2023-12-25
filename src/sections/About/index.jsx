@@ -43,7 +43,7 @@ export default function About() {
             </a>
           </li>
           <li>
-            <a href="/resume.html" target="_blank" className="resume">
+            <a href="/resume.pdf" target="_blank" className="resume">
               My Resume
             </a>
           </li>
